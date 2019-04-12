@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Quicksand', sans-serif, 'Cambria';
+}
+ /* navigation */
+ .topnav {
+  background-color: beige;
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: white;
+}
+
+.topnav .icon {
+  display: none;
+} 
+
+/*headings*/
+
+h1{
+  font-size: 54px;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px black;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+h2{
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+h3{
+  text-align: center;
+}
+
+/*home image*/
+.home-image {
+  background-image: url("img/nlights.jpg");
+  background-color: #0E1680;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+
+/* gallery  */
+
+.mySlides {
+  display:none;
+  width:100%;
+}
+
+.gallery{
+  margin-left:auto;
+  margin-right:auto;
+  max-width:800px;
+  position:relative
+}
+
+.button{
+border:none;
+display:inline-block;
+padding:8px 16px;
+vertical-align:middle;
+color: black;
+background-color:gray;
+}
+      
+.btn-right{
+position:absolute;
+top:50%;
+right:0%;
+transform:translate(0%,-50%);
+}
+.btn-left{
+position:absolute;
+top:50%;
+left:0%;
+transform:translate(0%,-50%);
+}
+
+
+/*photo in the middle*/
+.photo {
+  background-image: url("img/4.jpg");
+  background-color: #cccccc;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  opacity: 0.8;
+}
+
+/* columns in Ciekawostki */
+.column {
+  float: left;
+  width: 30%;
+  margin: 1%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* statistic bars */
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.place {
+  text-align: right;
+  padding: 10px;
+  color: black;
+}
+
+.iceland{
+  width: 90%;
+  background-color:#3D806E;
+}
+
+.greenland{
+  width: 85%;
+  background-color: #27C4CC;
+}
+
+.scandinavia{
+  width: 70%;
+  background-color: #54CC92;
+}
+
+/*sections*/
+div[id*="section"]{
+  text-align: left;
+  padding: 5%;
+}
+
+#section4 {
+  box-sizing: border-box;
+  background-color: beige;
+} 
+
+#section4 p{
+  padding: 5px;
+}
+
+#section2, #section5{
+  background-color: #2B8ECC
+}
+
+#section3, footer{
+  background-color: #25CC9F;
+}
+
+/* footer */
+footer p{
+  text-align: center;
+  padding: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  /* topnav */
+  .topnav a{
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+/*headings*/
+h1{
+  font-size: 46px;
+  position: relative;
+}
+
+
+/*photo in the middle*/
+.photo {
+  height: 15vh;
+}
+
+/* sections */
+div[id*="section"]{
+  padding: 10px;
+} 
+
+/* columns in Ciekawostki */
+.row{
+  display: inline-block;
+}
+
+.column {
+  width: 90vw;
+  padding: 10px;
+}
+
+.column p{
+  white-space: normal;
+}
+
+/* footer */
+footer p{
+  padding: 15px;
+}
+
+} 

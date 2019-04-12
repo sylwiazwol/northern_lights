@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Sylwia Zwolińska">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<title>Zorza polarna</title>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav>
+			<ul class="topnav" id="myTopnav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#section2">Jak powstaje?</a></li>
+				<li><a href="#section3">Ciekawostki</a></li>
+				<li><a href="#section4">Miejsca</a></li>
+				<li><a href="#section5">Galeria</a></li>
+				<li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+			</ul>
+		</nav>
+		<!-- home -->
+		<div class="home-image" id="home">
+			<h1>Zorza polarna</h1>
+		</div>
+		<!-- Section 2 -->
+		<div id="section2">
+			<h2>Jak powstaje?</h2>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam officia
+				expedita voluptatum natus ut eaque non libero ullam optio aut dolor, dicta,
+				vero quam necessitatibus consequuntur. Harum debitis iusto assumenda. Lorem,
+				ipsum dolor sit amet consectetur adipisicing elit. Quisquam officia expedita
+				voluptatum natus ut eaque non libero ullam optio aut dolor, dicta, vero quam
+			necessitatibus consequuntur. Harum debitis iusto assumenda</p>
+		</div>
+		<!-- Section 3 -->
+		<div id="section3" class="row">
+			<h2>Ciekawostki</h2>
+			<div class="column">
+				<h3>Lorem1</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Voluptates, rerum quis. Aliquam error enim sapiente dicta
+					nesciunt, ratione culpa pariatur qui ut quam, quo accusamus
+				aut minus velit ullam ipsam.</p>
+			</div>
+			<div class="column">
+				<h3>Lorem2</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Voluptates, rerum quis. Aliquam error enim sapiente dicta
+					nesciunt, ratione culpa pariatur qui ut quam, quo accusamus
+				aut minus velit ullam ipsam.</p>
+			</div>
+			<div class="column">
+				<h3>Lorem3</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Voluptates, rerum quis. Aliquam error enim sapiente dicta
+					nesciunt, ratione culpa pariatur qui ut quam, quo accusamus
+				aut minus velit ullam ipsam.</p>
+			</div>
+		</div>
+		<!-- background image -->
+		<div class="photo"></div>
+		<!-- Section 4 -->
+		<div id="section4">
+			<h2>Miejsca</h2>
+			<p>Miejsca występowania zorzy polarnej:</p>
+			<p>Islandia</p>
+			<div class="container">
+				<div class="place iceland">90%</div>
+			</div>
+			<p>Grenlandia</p>
+			<div class="container">
+				<div class="place greenland">85%</div>
+			</div>
+			<p>północna Skandynawia</p>
+			<div class="container">
+				<div class="place scandinavia">70%</div>
+			</div>
+		</div>
+		<!-- Section 5 -->
+		<div id="section5" >
+			<h2>Galeria</h2>
+
+			<div class="gallery">
+				<img class="mySlides" src="img/1.jpg" alt="zorza polarna">
+				<img class="mySlides" src="img/3.jpg" alt="zorza polarna">
+				<img class="mySlides" src="img/5.jpg" alt="zorza polarna">
+				<button class="button btn-left" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="button btn-right" onclick="plusDivs(1)">&#10095;</button>
+			  </div>
+			
+		</div>
+		<!-- footer -->
+		<footer>
+			<p>Copyright &copy; 2019</p>
+		</footer>
+
+		<script>
+		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+		function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+		x.className += " responsive";
+		} else {
+		x.className = "topnav";
+		}
+		} </script>
+
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+			
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+			
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  if (n > x.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+		</script>
+
+	</body>
+</html>
